@@ -1,7 +1,19 @@
 .tall-jumbo {
-  height: 500px;
+  height: 550px;
 }
 
 .header-footer-titles {
   text-align: center;
+}
+
+.background-control {
+  background-image: url('https://goldbondultimate.com/wp-content/uploads/2017/06/new-jumbotron-background.png');
+}
+
+.jumbo-text {
+  color: white;
+}
+
+.eye-catcher-text {
+  font-size: 40px;
 }

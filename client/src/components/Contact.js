@@ -1,4 +1,6 @@
 import React from 'react';
+import { Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
@@ -12,6 +14,25 @@ const Contact = () => {
       <h6>Email us and tell us how you think you could help
       our financial experts team.</h6>
       Email: notarealemail@gmail.com
+      <Navbar>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <Link to="/">I Should Invest</Link>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse>
+          <Navbar.Text>
+            <Navbar.Brand>
+              <Link to="/about">About</Link>
+            </Navbar.Brand>
+            <Navbar.Brand>
+              <Link to="/contact">Contact</Link>
+            </Navbar.Brand>
+          </Navbar.Text>
+          <Navbar.Text pullRight>Copyright ISI 2019</Navbar.Text>
+        </Navbar.Collapse>
+      </Navbar>
     </div>
   );
 }
