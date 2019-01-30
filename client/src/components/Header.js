@@ -8,6 +8,9 @@ const Header = () => {
         I Should Invest
       </Link>
       <div className=" right menu">
+        <Link to="/stocks" className="item">
+          Stocks
+        </Link>
         <Link to="/about" className="item">
           About
         </Link>

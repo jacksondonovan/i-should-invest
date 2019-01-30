@@ -1,0 +1,2 @@
+export const FETCH_STOCK_DATA = 'FETCH_STOCK_DATA';
+export const SELECT_STOCK = 'SELECT_STOCK';
