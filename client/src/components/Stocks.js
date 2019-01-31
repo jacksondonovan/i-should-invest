@@ -1,6 +1,7 @@
 import React from 'react';
 import { fetchStockData } from '../actions';
 import { connect } from 'react-redux';
+import TickerData from './TickerData';
 
 class Stocks extends React.Component {
   constructor(props) {
@@ -23,9 +24,11 @@ class Stocks extends React.Component {
     return (
       <div>
         <h3>Enter a ticker</h3>
-        <input type="text" value={this.state.ticker} onChange={onChangeTickerInput} />
+        <h4>Examples: FB, AAPL, AMZN, GOOG, NFLX, SNAP</h4>
+        <input type="text" value={this.state.ticker} onChange={this.onChangeTickerInput} />
         <button onClick={this.onSumbitTicker}>Go!</button>
         <hr />
+        <TickerData />
       </div>
     );
   }
